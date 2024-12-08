@@ -2,9 +2,9 @@ class ShellSage < Formula
     include Language::Python::Virtualenv
 
     desc "AI-powered shell commands in your terminal"
-    homepage "https://github.com/nicolaygerold/homebrew-shell-sage"
-    url "https://github.com/nicolaygerold/homebrew-shell-sage/archive/refs/tags/v0.0.1.tar.gz"
-    sha256 "346c534dda17e2599a4b6af00cbc4266035a541a41538a24f30c10374d91672d"
+    homepage "https://github.com/nicolaygerold/shell-sage"
+    url "https://github.com/nicolaygerold/shell-sage/archive/refs/tags/v0.0.1.tar.gz"
+    sha256 "21900dd1c3761f670bf6bc2546f6a6a2a044183296482c60ca71cdeb3e49c067"
     license "Apache-2.0"
 
     depends_on "python@3.12"
