@@ -8,6 +8,8 @@ class ShellSage < Formula
     license "Apache-2.0"
 
     depends_on "python@3.12"
+    depends_on "rust"
+    depends_on "maturin" => :build
 
     resource "aisuite" do
       url "https://files.pythonhosted.org/packages/source/a/aisuite/aisuite-0.1.6.tar.gz"
@@ -42,6 +44,41 @@ class ShellSage < Formula
     resource "httpcore" do
       url "https://files.pythonhosted.org/packages/source/h/httpcore/httpcore-1.0.2.tar.gz"
       sha256 "9fc092e4799b26174648e54b74ed5f683132a464e95643b226e00c2ed2fa6535"
+    end
+
+    resource "anyio" do
+      url "https://files.pythonhosted.org/packages/source/a/anyio/anyio-4.3.0.tar.gz"
+      sha256 "f75253795a87df48568485fd18cdd2a3fa5c4f7c5be8e5e36637733fce06fed6"
+    end
+
+    resource "certifi" do
+      url "https://files.pythonhosted.org/packages/source/c/certifi/certifi-2024.2.2.tar.gz"
+      sha256 "0569859f95fc761b18b45ef421b1290a0f65f147e92a1e5eb3e635f9a5e4e66f"
+    end
+
+    resource "distro" do
+      url "https://files.pythonhosted.org/packages/source/d/distro/distro-1.9.0.tar.gz"
+      sha256 "2fa77c6fd8940f116ee1d6b94a2f90b13b5ea8d019b98bc8bafdcabcdd9bdbed"
+    end
+
+    resource "h11" do
+      url "https://files.pythonhosted.org/packages/source/h/h11/h11-0.14.0.tar.gz"
+      sha256 "8f19fbbe99e72420ff35c00b27a34cb9937e902a8b810e2c88300c6f0a3b699d"
+    end
+
+    resource "idna" do
+      url "https://files.pythonhosted.org/packages/source/i/idna/idna-3.6.tar.gz"
+      sha256 "9ecdbbd083b06798ae1e86adcbfe8ab1479cf864e4ee30fe4e46a003d12491ca"
+    end
+
+    resource "sniffio" do
+      url "https://files.pythonhosted.org/packages/source/s/sniffio/sniffio-1.3.1.tar.gz"
+      sha256 "f4324edc670a0f49750a81b895f35c3adb843cca46f0530f79fc1babb23789dc"
+    end
+
+    resource "jiter" do
+      url "https://files.pythonhosted.org/packages/source/j/jiter/jiter-0.8.0.tar.gz"
+      sha256 "86fee98b569d4cc511ff2e3ec131354fafebd9348a487549c31ad371ae730310"
     end
 
     def install
